@@ -55,7 +55,7 @@ The Agile methodology makes use of several key components listed below:
 
 - **User stories:** a user story is a high-level description of a work request or program feature written from the customer's perspective. A user story should clearly outline the customer's role, their goal and the benefit obtained by achieving the goal. A common format for user stories is: "As a &lt;type of user&gt; I want to &lt;perform some task&gt; so that I can &lt;achieve some goal&gt;." e.g., "As a manager, I want to be able to view a report of all expenses in the past quarter so that I can budget for the upcoming quarter."
 
-- **Epics:** An epic is a collection of related user stories that create a large story when combined.
+- **Epics:** An epic is a collection of related user stories that create a large coherent story when combined. If your project management tool does not allow you to keep track of epics in the tool itself, you may want to create a separate document (e.g., Word document) containing your epics. You can then use labels to group user stories that are part of the same epic.
 
 - **Task/Spike:** A single unit of work broken down from a user story. Tasks or spikes are a subsection of user story that help developers identify the steps needed in order to implement a user story.
 
