@@ -53,7 +53,13 @@ The Agile Manifesto outlined 12 principles that should always guide a team's dec
 
 The Agile methodology makes use of several key components listed below:
 
-- **User stories:** a user story is a high-level description of a work request or program feature written from the customer's perspective. A user story should clearly outline the customer's role, their goal and the benefit obtained by achieving the goal. A common format for user stories is: "As a &lt;type of user&gt; I want to &lt;perform some task&gt; so that I can &lt;achieve some goal&gt;." e.g., "As a manager, I want to be able to view a report of all expenses in the past quarter so that I can budget for the upcoming quarter."
+- **User stories:** a user story is a high-level description of a work request or program feature written from the customer's perspective. A user story should clearly outline the customer's role, their goal and the benefit obtained by achieving the goal. A common format for user stories is: "As a &lt;type of user&gt; I want to &lt;perform some task&gt; so that I can &lt;achieve some goal&gt;." e.g., "As a manager, I want to be able to view a report of all expenses in the past quarter so that I can budget for the upcoming quarter." You may want to include an estimation of effort for your user stories. We actively discourage the use of story points when doing the estimation of effort for your user stories as they will exponentially increase the amount of time spent on creating estimates and take resources away from the development work. Instead, we recommend using a the following simple scale for the user story estimation of effort:   
+	- Not Specified
+	- Trivial
+	- Easy
+	- Normal
+	- Hard
+	Try to avoid overthinking this process or spending too much time on estimation. The default option for the estimation of effort should "Not Specified" and you can leave it as such if you are not sure which level to use.
 
 - **Epics:** An epic is a collection of related user stories that create a large coherent story when combined. If your project management tool does not allow you to keep track of epics in the tool itself, you may want to create a separate document (e.g., Word document) containing your epics. You can then use labels to group user stories that are part of the same epic.
 
