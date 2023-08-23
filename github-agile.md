@@ -19,6 +19,7 @@ Click the **Issues** button in the navigation bar
 
 Then click the **Labels** button in top right corner. 
  ![labels-button](assets/img/labels-button.png)
+
 Click the **New Label** button to create a new label and fill out the fields as shown below:
 - **Label name:** user story
 - **Description:** A label that indicates that an issue is a valid user story
