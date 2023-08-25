@@ -286,11 +286,14 @@ Rename the new view to **Roadmap**. Next, click on the **Date fields** button in
 
 ![date-field](assets/img/date-field.png)
 
+You will now need to select the date fields by clicking on **Date fields** and selecting **Iteration Start** and **Iteration End** for the Start date and target Date respectively and clicking on **Save**. 
+
+![set-date-fields](assets/img/set-date-fields.png)
 ## Add Table
 
 We will now create our final view which contains a spreadsheet-like table. Click the **New View** button next to the **Board** tab and select **Table** from the dropdown menu.
 
-Rename the new view to **Table**. Click the **+** button next to the **Status** column and check **Labels**, **Milestone** and **Iteration** to display these hidden fields.
+Rename the new view to **Table**. Click the **+** button next to the **Status** column and check **Labels**, **Milestone** and **Iteration** to display these hidden fields and click **Save**.
 
 ![show-fields](assets/img/show-fields.png)
 
@@ -502,12 +505,6 @@ The task should be moved through the containers according to the following progr
 ## Using the Roadmap View
 
 The Roadmap view allows you to view the user stories and tasks that are part of the current iteration in a calendar view.
-
-First, you will need to select the date fields, by clicking on **Date fields** and selecting **Iteration Start** and **Iteration End** for the Start date and target Date respectively. 
-
-![set-date-fields](assets/img/set-date-fields.png)
-
-After doing the step above, you will be able to see the user stories and tasks overlaid on top of the calendar period that corresponds to the current iteration.
 
 ![iteration-items](assets/img/iteration-items.png)
 ## Using the Table View
