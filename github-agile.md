@@ -20,7 +20,7 @@ Click the **Issues** button in the navigation bar
 Then click the **Labels** button in top right corner. 
  ![labels-button](assets/img/labels-button.png)
 
-Click the **New Label** button to create a new label and fill out the fields as shown below:
+Click the **New label** button to create a new label and fill out the fields as shown below:
 - **Label name:** user story
 - **Description:** A label that indicates that an issue is a valid user story
 - **Color:** any color that is not already used for another label
@@ -55,6 +55,23 @@ Repeat this process above and create 4 new labels detailed the different priorit
 	- **Color:** any color that is not already used for another label
 
 ![priority-labels](assets/img/priority-labels.png)
+## Create Milestone
+
+We will now add a milestone to our project to represent the first sync point.
+
+Navigate to an existing GitHub repository or create a new one for the purposes of this learning module. 
+
+Click the **Issues** button in the navigation bar 
+![issues-button](assets/img/issues-button.png)
+
+Then click the **Milestones** button in top right corner. 
+
+Click the **New milestone** button to create a new label and fill out the fields as shown below:
+- **Title:** v1.0.0
+- **Due date:** leave blank for now
+- **Description:** The first milestone in this project representing the first stable release.
+
+Finally, click **Create milestone**.
 ## Create Templates
 
 We will now create an issue template that we will use for the issues that represent user stories in our repository.
@@ -85,6 +102,9 @@ Fill out the fields as shown below:
   - What’s the overall benefit they’re trying to achieve? How does it fit into the bigger picture?
 - You can use the following format for user stories: "As a <type of user>, I want to <perform some task> so that I can <achieve some goal>."
 
+# Linked Tasks
+- Enter linked tasks here using the # sign
+
 # Estimation of Effort
 - Provide an estimate of the amount of work that this user story will require to be completely and successfully implemented using the following estimation scale:
   - Not Specified
@@ -113,16 +133,14 @@ Repeat the process outlined above to create the task template with the following
 - **About:** A template that should be used when creating tasks in GitHub Issues.
 - **Description:**
 ```
-# Enter Task Name Here
+# Task Description
+- Describe the new feature here.  
 
-### Linked User Story (-ies)
-Link user story (-ies) to this task here
+# Linked User Story (-ies)
+- Link user story (-ies) to this task here
 
-### Task Description
-Describe the new feature here.  
-
-### Subtasks
-List subtasks here.  
+# Subtasks
+- List subtasks here. 
 
 ```
 - **Label:** task
@@ -320,6 +338,9 @@ Next, fill out the body of the user story. The text provided below is an example
 - Internal customers want to use their existing MacID credentials to login to the web application.
 - The main benefit of this user story is that internal customers will not have to create a new account or need to remember a new pair of credentials to use the web application. This would also lower the barrier to entry of the web application and make the login process more seamless for internal users.
 
+# Linked Tasks
+- TBD
+
 # Estimation of Effort
 - Normal
 
@@ -333,7 +354,7 @@ In the "User Story" section, we answered the primary questions outlined in the u
 
 Make sure to add the "user story" label to this issue. Furthermore, given that this user story relates directly to the security of our web application and since we cannot ship a web application that does not meet the minimum security requirements, we classified this user story as a "Must Have" as shown by the label. 
 
-![sso-user-story](assets/img/sso-user-story.png)
+This user story represents a feature that should be part of the first stable release, click on **Milestone** in the right side bar and select **v1.0.0**.
 
 Our user story is part of a bigger epic that centers around giving customers multiple sign in options to accommodate both internal and external users. The epic is defined in an external Word document as shown below:
 
@@ -354,7 +375,7 @@ Click **Create label** after entering the label information.
 
 Finally, go back to the user story and the newly created epic label.
 
-![final-user-story](assets/img/final-user-story.png)
+![sso-user-story](assets/img/sso-user-story.png)
 
 ## Add Another User Story
 
@@ -369,6 +390,9 @@ Add the following description to the body of the user story:
 - External customers want to use their existing Google account credentials to login to the web application.
 - The main benefit of this user story is that external customers will not have to create a new account or need to remember a new pair of credentials to use the web application. This would also lower the barrier to entry of the web application and make the login process more seamless for external users.
 
+# Linked Tasks
+- TBD
+
 # Estimation of Effort
 - Normal
 
@@ -378,7 +402,7 @@ Add the following description to the body of the user story:
 - Given that I am an external customer that has already logged in, when I close my browser tab and open the web application in a new tab, then the web application should require me to sign in again.
 ```
 
-Make sure to tag the user story with the "user story", "must have" and "epic: sign in options" labels.
+Make sure to tag the user story with the "user story", "must have" and "epic: sign in options" labels and the v1.0.0 milestone.
 
 ![external-user-story](assets/img/external-user-story.png)
 ## Add User Stories to Agile Board
@@ -426,16 +450,14 @@ Select Task from the dropdown menu to load in the task template.
 
 Update the task body with the following information:
 ```
-# Add MacID SSO using MS Azure and the msal-react library
+# Linked User Story (-ies)
+- #1 
 
-### Linked User Story (-ies)
-#1 
-
-### Task Description
+# Task Description
 - Add the ability to sign into the web application using valid MacID credentials
 - We will be using the `msal-react` library to enable SSO using MS Azure
 
-### Subtaks
+# Subtaks
 - Register SPA in MS Azure AD
 - Create environment and authentication configuration files
 - Wrap template in `MsalProvider` component
@@ -451,6 +473,10 @@ Notice that we linked a user story by entering a **pound sign** (**#**) and then
 ![linking-story](assets/img/linking-story.png)
 
 Make sure to tag the issue with the **task** label we created earlier.
+
+Remember to go back to the user story and update the **Linked Tasks** section as shown below:
+
+![sso-linked-tasks](assets/img/sso-linked-tasks.png)
 ## Move Tasks through Containers
 
 Once a developer starts working on a task, they will create a branch with the desired changes.
@@ -481,7 +507,7 @@ First, you will need to select the date fields, by clicking on **Date fields** a
 
 ![set-date-fields](assets/img/set-date-fields.png)
 
-After doing the step above, you will be able to see the user stories and task overlaid on top of the calendar period that corresponds to the current iteration.
+After doing the step above, you will be able to see the user stories and tasks overlaid on top of the calendar period that corresponds to the current iteration.
 
 ![iteration-items](assets/img/iteration-items.png)
 ## Using the Table View
