@@ -8,7 +8,7 @@ nav_order: 5
 
 GitHub is a repository management service that has taken over the development world over the past decade becoming the de facto place to host your software product. While GitHub revolutionized the way developers collaborate on code, it did not have a proper built-in project management tool until the introduction of **GitHub Projects** in 2021. Unlike traditional project management tools that are separate from the code repository, GitHub Projects integrates seamlessly with GitHub Issues and allows developers to easily keep track of their tasks and the overall progress of a software project. GitHub Projects enables teams to create an adaptable spreadsheet, task board and roadmap that incorporate existing issues and pull requests. GitHub Projects' was not designed with a specific methodology in mind, and provides a high degree of flexibility and customization. In this section of the learning module, we will learn how we can use GitHub Projects for Agile software development. We will learn how to create an Agile Board in GitHub Projects and how we can filter and group user stories in a spreadsheets. Lastly, we will lean how to plan iterations using the roadmap feature in GitHub Projects.
 
-## "user story" Label
+## Create Labels
 
 We will start off by creating a "user story" label that will be used to tag issues that represent user stories in our repository.
 
@@ -28,7 +28,34 @@ Click the **New Label** button to create a new label and fill out the fields as 
 ![user-story-label](assets/img/user-story-label.png)
 
 Finally, click the **Create label** button to create the new label.
-## User Stories Template
+
+Repeat the steps above to create task label:
+- **Label name:** task
+- **Description:** A label that indicates that an issue is a task
+- **Color:** any color that is not already used for another label
+
+![task-label](assets/img/task-label.png)
+
+Repeat this process above and create 4 new labels detailed the different priority levels of the MoSCoW model as shown below:
+- **Must Have**:
+	- **Label name:** must have
+	- **Description:** A label used on "Must Have" user stories
+	- **Color:** any color that is not already used for another label
+- **Should Have**:
+	- **Label name:** should have
+	- **Description:** A label used on "Should Have" user stories
+	- **Color:** any color that is not already used for another label
+- **Could Have**:
+	- **Label name:** user story
+	- **Description:** A label used on "Could Have" user stories
+	- **Color:** any color that is not already used for another label
+- **Won't Have**:
+	- **Label name:** user story
+	- **Description:** A label used on "Won't Have" user stories
+	- **Color:** any color that is not already used for another label
+
+![priority-labels](assets/img/priority-labels.png)
+## Create Templates
 
 We will now create an issue template that we will use for the issues that represent user stories in our repository.
 
@@ -80,6 +107,83 @@ Click the **Close preview** button after entering the required information.
 Finally, click **Propose changes** and the click **Commit changes** to save the new user story template. 
 
 ![changes](assets/img/changes.png)
+
+Repeat the process outlined above to create the task template with the following information:
+- **Template name:** Task
+- **About:** A template that should be used when creating tasks in GitHub Issues.
+- **Description:**
+```
+# Enter Task Name Here
+
+### Linked User Story (-ies)
+Link user story (-ies) to this task here
+
+### Task Description
+Describe the new feature here.  
+
+### Subtasks
+List subtasks here.  
+
+```
+- **Label:** task
+
+![task-template](assets/img/task-template.png)
+
+## Create Pull Request Templates
+
+We will now create the templates for feature pull requests and bug fix pull requests:
+
+1. Navigate to the **Code** tab of your GitHub repository
+2. Click the **Add file** button and select **Create new file**
+3. Enter `.github/PULL_REQUEST_TEMPLATE/feature_pr_template.md` in the name field
+4. Add the following content to the file 
+```
+# Feature Title
+
+### Feature Description
+Describe the new feature here.  
+
+### Expected Behavior
+Describe the expected behavior here.  
+
+### Test Cases
+Detail the test cases you used.  
+
+### Additional Information
+Describe the addition changes/steps you took, for example the SQL commands used for adding a column in database table.  
+
+```
+5. Click commit changes to the save the file.
+
+Repeat the process above to create the bug fix pull request template using the following information:
+**File name:** `.github/PULL_REQUEST_TEMPLATE/bugfix_pr_template.md`
+**File content:**
+```
+# Bug Fix Title
+
+### Issue Description
+Describe the issue here.  
+
+### Steps to Reproduce
+Provide a step-by-step guide to reproducing the issue.
+
+### Expected Behavior
+Describe the expected behavior here.  
+
+### Solution/Fix Description
+Describe what approaches are taken to fix/mitigate the issue.  
+
+### Test Cases
+Detail the test cases you used.  
+
+### Additional Information
+Describe the addition changes/steps you took, for example the SQL commands used for adding a column in database table.  
+
+```
+
+When creating a pull request, add the following query parameter to the URL to use one of the templates above:
+- `template=feature_pr_template.md`
+- `template=bugfix_pr_template.md`
 ## Create a New Project
 
 Now that we created the user story label and template, we can proceed to create a new project in GitHub Projects.
@@ -189,3 +293,201 @@ In the popup window, select the **Owner**, enter a **Project name** and then cli
 ![save-template](assets/img/save-template.png)
 
 Your template is now saved as its own project. Do not use this template project as a real project. Leave it at this stage, so that you can always copy it and use that copy as a starting point for future projects.
+
+## Create an Example User Story
+
+Now that our template is ready, we will explain how we can use it according to the proposed Agile workflow we devised in the previous section.
+
+After meeting with your client(s) and/or stakeholder(s) and gathering your user stories and epics, you will need to enter the collected user stories into GitHub as issues using the the template we created earlier.
+
+You can create new issues in one of two ways:
+1. Navigate to the **Issues** tab of your GitHub repository and click the **New Issue**, then click the **Get started** button adjacent to the **User Story** template.
+	![user-story-button](assets/img/user-story-button.png)
+
+2. From the Agile Board, click the **Add Item** button at the bottom of  the **Product Backlog** container, then enter a **pound sign** (**#**) and select your GitHub repository. You will be presented with a **Create new issue** option, click that button and new popup will open. Click the **Choose** button adjacent to the **User Story** template.
+	![new-issue-board](assets/img/new-issue-board.png)
+	![new-issue-popup](assets/img/new-issue-popup.png)
+
+We will now create an example user story. For the purposes of this learning module, we will create a user story centered around adding single sign-on using MacID credentials. 
+
+The title of the user story follow the format proposed in the previous section: "# As an internal user, I want to login using my MacID so that I don't have to create a separate account."
+
+Next, fill out the body of the user story. The text provided below is an example of the information to include in this section:
+
+```
+# User Story
+- This user story targets internal customers.
+- Internal customers want to use their existing MacID credentials to login to the web application.
+- The main benefit of this user story is that internal customers will not have to create a new account or need to remember a new pair of credentials to use the web application. This would also lower the barrier to entry of the web application and make the login process more seamless for internal users.
+
+# Estimation of Effort
+- Normal
+
+# Acceptance Criteria
+- Given that I am an internal customer, when I click the "Sign in" button, then I should be given the option login using my MacID and password.
+- Given that I am an internal customer, when I enter my valid MacID and password credentials, then I should be logged into the application and taken to the main landing page.
+- Given that I am an internal customer that has already logged in, when I close my browser tab and open the web application in a new tab, then the web application should require me to sign in again.
+```
+
+In the "User Story" section, we answered the primary questions outlined in the user story template, we also included a basic estimation of effort as well as the acceptance criteria. 
+
+Make sure to add the "user story" label to this issue. Furthermore, given that this user story relates directly to the security of our web application and since we cannot ship a web application that does not meet the minimum security requirements, we classified this user story as a "Must Have" as shown by the label. 
+
+![sso-user-story](assets/img/sso-user-story.png)
+
+Our user story is part of a bigger epic that centers around giving customers multiple sign in options to accommodate both internal and external users. The epic is defined in an external Word document as shown below:
+
+![epic](assets/img/epic.png)
+
+We will now create a label for this particular epic. We recommend using the same color for all epic label and keeping their names relatively short. We also encourage developers to use the following naming convention for epic labels: `epic: <title>`.
+
+To create additional labels from the user story page, click the **gear icon** on the right and then select **Edit labels** from the dropdown menu, then click **New label** and fill out the name, description and color fields.
+
+![edit-labels](assets/img/edit-labels.png)
+
+We entered the following information for our epic:
+- **Label name:** epic: sign in options
+- **Description:** Give users multiple sign-in options
+- **Color:** \#6D258D
+
+Click **Create label** after entering the label information.
+
+Finally, go back to the user story and the newly created epic label.
+
+![final-user-story](assets/img/final-user-story.png)
+
+## Add Another User Story
+
+Repeat the steps above and create another user story that centers around giving external users the ability to sign into the web application using their Google account.
+
+We recommend using the following title: "As an external user, I want to login using my Google account so that I don't have to create a new account".
+
+Add the following description to the body of the user story:
+```
+# User Story
+- This user story targets external customers.
+- External customers want to use their existing Google account credentials to login to the web application.
+- The main benefit of this user story is that external customers will not have to create a new account or need to remember a new pair of credentials to use the web application. This would also lower the barrier to entry of the web application and make the login process more seamless for external users.
+
+# Estimation of Effort
+- Normal
+
+# Acceptance Criteria
+- Given that I am an external customer, when I click the "Sign in" button, then I should be given the option login using my Google account.
+- Given that I am an external customer, when I enter my valid Google account and password credentials, then I should be logged into the application and taken to the main landing page.
+- Given that I am an external customer that has already logged in, when I close my browser tab and open the web application in a new tab, then the web application should require me to sign in again.
+```
+
+Make sure to tag the user story with the "user story", "must have" and "epic: sign in options" labels.
+
+![external-user-story](assets/img/external-user-story.png)
+## Add User Stories to Agile Board
+
+Open your GitHub Project and click **Add item** button at the bottom of the Product Backlog container. Next, enter a **pound sign** (**#**) and select your GitHub repository and select the two user stories we just created from the menu.
+
+![product-backlog](assets/img/product-backlog.png)
+
+Your Product Backlog container will now look like this:
+
+![product-backlog-filled](assets/img/product-backlog-filled.png)
+
+# Populate Sprint Backlog
+
+When you are ready to start development on your project, you will need to select a set of user stories to work on in the first sprint. Starting with high priority (i.e., "Must Have") user stories is often recommended, but you should also consider the dependencies between the different user stories. For example, if completing a user story is a blocker for a set of other user stories, then it may be beneficial to complete that user story first, so that you can address the other dependent user stories in future sprints. If during this assessment process, you encounter issues that you want to freeze, make sure to move them to the Icebox container on the Agile Board.
+
+Our current product backlog is very simple, so we will start off by moving the MacID single sign-on user story to the spring backlog container by dragging it to the proper container. 
+
+![product-sprint](assets/img/product-sprint.png)
+
+You can click on a user story in your sprint backlog and assign a developer and an iteration (i.e. sprint) to it.
+
+![assignees](assets/img/assignees.png)
+## Create Tasks/Subtasks from User Stories
+
+Developers should create tasks and/or subtasks for each user story in the current sprint backlog. Tasks can then be converted into an issue and subsequently a pull request that will reviewed and merged once ready. Note that not every task or subtask needs to be turned into an issue. You can usually a single comprehensive task that gets converted an issue an then a merge request and several associated subtasks. We will now detail the process of splitting our MacID single sign-on user story into tasks and subtasks as an example.
+
+Click the **Add item** button at the bottom of the **Todo** container and add the following task (without selecting a repository using the # sign): "Add MacID SSO using MS Azure and the msal-react library".
+Notice that tasks can use technical lingo and do not need to be written from the customer's perspective. 
+
+![todo-1](assets/img/todo-1.png)
+
+We will now convert our primary task into an issue by hovering on the task card, clicking the ellipses button and selecting **Convert to issue** from the dropdown menu and finally selecting the appropriate repository.
+
+![convert-issue](assets/img/convert-issue.png)
+
+Next, click on the task card in the container and assign a developer to it as well as an iteration.
+Click the **Edit** button and enter **/** (forward slash) in the text box that appears.
+
+Select Templates from the dropdown menu
+![slash-templates](assets/img/slash-templates.png)
+
+Select Task from the dropdown menu to load in the task template.
+![slash-task](assets/img/slash-task.png)
+
+Update the task body with the following information:
+```
+# Add MacID SSO using MS Azure and the msal-react library
+
+### Linked User Story (-ies)
+#1 
+
+### Task Description
+- Add the ability to sign into the web application using valid MacID credentials
+- We will be using the `msal-react` library to enable SSO using MS Azure
+
+### Subtaks
+- Register SPA in MS Azure AD
+- Create environment and authentication configuration files
+- Wrap template in `MsalProvider` component
+- Create `SignInButton` and `SignOutButton` components
+- Create `PermissionGate` component to check if a user is signed in or not
+- Create the Microsoft Graph client helper
+- Update existing pages to be restricted unless a user is logged in
+
+```
+
+Notice that we linked a user story by entering a **pound sign** (**#**) and then selecting the user story from the dropdown menu. The user story number may be different for you.
+
+![linking-story](assets/img/linking-story.png)
+
+Make sure to tag the issue with the **task** label we created earlier.
+## Move Tasks through Containers
+
+Once a developer starts working on a task, they will create a branch with the desired changes.
+
+The task should be moved through the containers according to the following progression track:
+1. When the developer starts working on a task, they should move its card to the **In Progress** container.
+	![card-inprogress](assets/img/card-inprogress.png)
+2. When the developer is done working on a task, they should create a pull request:
+	1. Go to the **Pull Request** tab on their repository, clicking on **New pull request**.
+	2. Select the source branch
+	3. Add `?template=feature_pr_template.md` or `?template=bugfix_pr_template.md` to the URL
+	4. Click **Create pull request**
+	5. Fill out the **Title** and the **Body** of the pull request
+	6. Click **Create Pull Request**
+3. Link the pull request to the task by opening the pull request clicking on **Development** in the side bar and selecting the task.
+	![link-task](assets/img/link-task.png)
+4. Add **Reviewers** and **Assignees** to the pull request
+5. Move the task card to the **Awaiting Review** container
+	![card-awaiting](assets/img/card-awaiting.png)
+6. When the pull request has been tested and approved, the task card should be moved to the **Done** container.
+	![card-done](assets/img/card-done.png)
+
+## Using the Roadmap View
+
+The Roadmap view allows you to view the user stories and tasks that are part of the current iteration in a calendar view.
+
+First, you will need to select the date fields, by clicking on **Date fields** and selecting **Iteration Start** and **Iteration End** for the Start date and target Date respectively. 
+
+![set-date-fields](assets/img/set-date-fields.png)
+
+After doing the step above, you will be able to see the user stories and task overlaid on top of the calendar period that corresponds to the current iteration.
+
+![iteration-items](assets/img/iteration-items.png)
+## Using the Table View
+
+
+
+
+
+
