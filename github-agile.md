@@ -93,6 +93,7 @@ Fill out the fields as shown below:
 - **Template name:** User Story
 - **About:** A template that should be used when creating user stories in GitHub Issues.
 - **Description:**
+
 ```
 # User Story
 - Provide a high-level detailed description of the user story from the perspective of the customer. Do not include implementation details in this section. Describe the feature, its behavior and the goal that it will help the user achieve.
@@ -120,6 +121,7 @@ Fill out the fields as shown below:
 - The acceptance criteria should be testable and act as testing guidelines for developers.
 - Acceptance criteria should use the following format: "Given (how things begin), when (action taken), then (outcome of taking action)."	
 ```
+
 - **Labels:** user story
 
 Click the **Close preview** button after entering the required information.
