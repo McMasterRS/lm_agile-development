@@ -499,8 +499,9 @@ The task should be moved through the containers according to the following progr
 4. Add **Reviewers** and **Assignees** to the pull request
 5. Move the task card to the **Awaiting Review** container
 	![card-awaiting](assets/img/card-awaiting.png)
-6. When the pull request has been tested and approved, the task card should be moved to the **Done** container.
+6. When the pull request has been tested and approved, the task card should be moved to the **Done** container and the developer in charge of this task should also close it (i.e., close the issue in GitHub).
 	![card-done](assets/img/card-done.png)
+7. Once all the tasks that are part of a user story are done, the user story issue should also be closed.
 
 ## Using the Roadmap View
 
@@ -508,6 +509,27 @@ The Roadmap view allows you to view the user stories and tasks that are part of 
 
 ![iteration-items](assets/img/iteration-items.png)
 ## Using the Table View
+
+The Table view functions like a spreadsheet and allows to search for particular user stories and tasks or filter according to different attributes like the current status, label, milestone, etc.
+
+You can add or remove fields from the table view using the **+** button in top right corner of the table. 
+
+![table-add-fields](assets/img/table-add-fields.png)
+
+Additionally, you can use the search box above the table to find particular user stories or tasks. For instance, the query below returns all the "Must Have" user stories that in the Product Backlog.
+
+![query-example](assets/img/query-example.png)
+
+## Wrapping Up an Iteration
+
+An iteration is complete after its assigned duration has elapsed and all the user stories in the Sprint Backlog are closed. Note that you can close a user story by clicking on it and then clicking on the **Close Issue** button. Make sure that **Close as completed** is selected from the dropdown menu.
+
+![close-issue](assets/img/close-issue.png)
+
+At the end of an iteration, the team should meet to assess the work done during the current iteration. Ideally, all user stories in the current Sprint Backlog should be completed at this point. Nevertheless, if the team is left with incomplete user stories in the Sprint Backlog, then can be addressed in the following sprint or moved back to the Product Backlog or Icebox if the user requirements have changed.
+
+The meeting at the end of an iteration is also a great opportunity for the team to assess their progress on a project and identify any weak points and modify their methodology or strategy accordingly. 
+
 
 
 
