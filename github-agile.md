@@ -99,6 +99,7 @@ Click the **Settings** button in the navigation bar to view your repository sett
 ![set-up-templates](assets/img/set-up-templates.png)
 
 Click **Add template** and then select **Custom Template** from the dropdown menu. 
+
 ![add-template](assets/img/add-template.png)
 
 Next, click **Preview and edit** button adjacent to the custom template you just created.
@@ -347,9 +348,12 @@ The default workflows in GitHub Projects automatically move closed issues to the
 
 1. In the top-right corner of your project, click the **ellipses** button to open the menu.
 2. Select **Workflows** from the dropdown menu.
+
 	![workflows](assets/img/workflows.png)
+	
 3. Under **Default workflows**, select **Item closed**.
 4. Click the blue toggle in top-right corner to turn it off
+
 	![toggle](assets/img/toggle.png)
 
 ## Save the Project as a Template
@@ -511,9 +515,11 @@ Next, click on the task card in the container and assign a developer to it as we
 Click the **Edit** button and enter **/** (forward slash) in the text box that appears.
 
 Select Templates from the dropdown menu
+
 ![slash-templates](assets/img/slash-templates.png)
 
 Select Task from the dropdown menu to load in the task template.
+
 ![slash-task](assets/img/slash-task.png)
 
 Update the task body with the following information:
