@@ -12,29 +12,47 @@ GitHub is a repository management service that has taken over the development wo
 
 We will start off by creating a "user story" label that will be used to tag issues that represent user stories in our repository.
 
-Navigate to an existing GitHub repository or create a new one for the purposes of this learning module. 
+You can create labels for one repository only or you can add them to the default labels of your organization so that they are automatically added to all future repositories created in that organization.
 
-Click the **Issues** button in the navigation bar 
+**To add labels to one repository only:**
+
+1. Navigate to an existing GitHub repository or create a new one for the purposes of this learning module. 
+
+2. Click the **Issues** button in the navigation bar 
 ![issues-button](assets/img/issues-button.png)
 
-Then click the **Labels** button in top right corner. 
+3. Then click the **Labels** button in top right corner. 
  ![labels-button](assets/img/labels-button.png)
 
-Click the **New label** button to create a new label and fill out the fields as shown below:
-- **Label name:** user story
-- **Description:** A label that indicates that an issue is a valid user story
-- **Color:** any color that is not already used for another label
+**To add default labels to your organization:**
+
+1. In the top right corner of GitHub.com, click your **profile photo**, then click **Your organizations**.
+2. Next to the organization, click **Settings**.
+3. In the "Code, planning, and automation" section of the sidebar, select **Repository**, then click **Repository defaults**.
+
+4. Click the **New label** button to create a new label and fill out the fields as shown below:
+	- **Label name:** user story
+	- **Description:** A label that indicates that an issue is a valid user story
+	- **Color:** any color that is not already used for another label
 
 ![user-story-label](assets/img/user-story-label.png)
 
-Finally, click the **Create label** button to create the new label.
+5. Finally, click the **Create label** button to create the new label.
 
-Repeat the steps above to create task label:
-- **Label name:** task
-- **Description:** A label that indicates that an issue is a task
-- **Color:** any color that is not already used for another label
+Repeat the steps above to create the task and spike labels:
+- **Task Label:**
+	- **Label name:** task
+	- **Description:** A label that indicates that an issue is a task
+	- **Color:** any color that is not already used for another label
 
 ![task-label](assets/img/task-label.png)
+
+- **Spike Label:**
+	- **Label name:** spike
+	- **Description:** A label that indicates that an issue is a spike
+	- **Color:** any color that is not already used for another label
+
+![spike-label](assets/img/spike-label.png)
 
 Repeat this process above and create 4 new labels detailed the different priority levels of the MoSCoW model as shown below:
 - **Must Have**:
@@ -134,21 +152,43 @@ Repeat the process outlined above to create the task template with the following
 - **Template name:** Task
 - **About:** A template that should be used when creating tasks in GitHub Issues.
 - **Description:**
+
 ```
 # Task Description
-- Describe the new feature here.  
+- Describe the new feature or technical work to be done here.  
 
 # Linked User Story (-ies)
 - Link user story (-ies) to this task here
 
 # Subtasks
-- List subtasks here. 
-
+- [ ] List subtasks here.
+- [ ] Make use of checkbox for easy progress tracking.
 ```
+
 - **Label:** task
 
 ![task-template](assets/img/task-template.png)
 
+Repeat this process one final time to create the spike template with the following information:
+- **Template name:** Spike
+- **About:** A template that should be used when creating spikes in GitHub Issues.
+- **Description:**
+
+```
+# Spike Description
+- Describe the tool, library, framework, etc. that you want to explore and explain why it is needed for the project.  
+
+# Linked User Story (-ies)
+- Link user story (-ies) to this task here
+
+# Subtasks
+- [ ] List subtasks here.
+- [ ] Make use of checkbox for easy progress tracking.
+```
+
+- **Label:** spike
+
+![spike-template](assets/img/spike-template.png)
 ## Create Pull Request Templates
 
 We will now create the templates for feature pull requests and bug fix pull requests:
@@ -158,19 +198,18 @@ We will now create the templates for feature pull requests and bug fix pull requ
 3. Enter `.github/PULL_REQUEST_TEMPLATE/feature_pr_template.md` in the name field
 4. Add the following content to the file 
 ```
-# Feature Title
-
 ### Feature Description
-Describe the new feature here.  
+- Describe the new feature here.  
 
 ### Expected Behavior
-Describe the expected behavior here.  
+- Describe the expected behavior here.  
 
 ### Test Cases
-Detail the test cases you used.  
+- [ ] Detail the test cases you used.
+- [ ] Make use of checkboxes to help the developers who is doing the testing keep track of their progress
 
 ### Additional Information
-Describe the addition changes/steps you took, for example the SQL commands used for adding a column in database table.  
+- Describe the addition changes/steps you took, for example the SQL commands used for adding a column in database table.   
 
 ```
 5. Click commit changes to the save the file.
@@ -182,22 +221,23 @@ Repeat the process above to create the bug fix pull request template using the f
 # Bug Fix Title
 
 ### Issue Description
-Describe the issue here.  
+- Describe the issue here.  
 
 ### Steps to Reproduce
-Provide a step-by-step guide to reproducing the issue.
+- Provide a step-by-step guide to reproducing the issue.
 
 ### Expected Behavior
-Describe the expected behavior here.  
+- Describe the expected behavior here.  
 
 ### Solution/Fix Description
-Describe what approaches are taken to fix/mitigate the issue.  
+-Describe what approaches are taken to fix/mitigate the issue.  
 
 ### Test Cases
-Detail the test cases you used.  
+- [ ] Detail the test cases you used.
+- [ ] Make use of checkboxes to help the developers who is doing the testing keep track of their progress
 
 ### Additional Information
-Describe the addition changes/steps you took, for example the SQL commands used for adding a column in database table.  
+- Describe the addition changes/steps you took, for example the SQL commands used for adding a column in database table.  
 
 ```
 
@@ -300,6 +340,16 @@ Rename the new view to **Table**. Click the **+** button next to the **Status** 
 ![show-fields](assets/img/show-fields.png)
 
 You can show or hide fields in the future as needed.
+## Disable "Item Closed" Workflow
+
+The default workflows in GitHub Projects automatically move closed issues to the "Done" container. While this may be useful for closed tasks, closed user stories should remain in your Sprint Backlog until the end of the iteration. As such, it makes sense to disable the "Item Closed" workflow.
+
+1. In the top-right corner of your project, click the **ellipses** button to open the menu.
+2. Select **Workflows** from the dropdown menu.
+	![workflows](assets/img/workflows.png)
+3. Under **Default workflows**, select **Item closed**.
+4. Click the blue toggle in top-right corner to turn it off
+	![toggle](assets/img/toggle.png)
 
 ## Save the Project as a Template
 
@@ -317,6 +367,17 @@ In the popup window, select the **Owner**, enter a **Project name** and then cli
 
 Your template is now saved as its own project. Do not use this template project as a real project. Leave it at this stage, so that you can always copy it and use that copy as a starting point for future projects.
 
+Note that you may need to update the iteration field for future projects that use this template to select a different start date or duration.
+
+**To edit the iteration on a future project that uses this template:**
+1. Navigate to your project.
+2. In the top-right, click the three ellipses to open the dropdown menu.
+    
+    ![Screenshot showing a project's menu bar. The menu icon is highlighted with an orange outline.](https://docs.github.com/assets/cb-789/images/help/projects-v2/open-menu.png)
+3. In the menu, click **Settings** to access the project settings.
+4. In the list on the left, click the name of the iteration field you want to adjust.
+5. From this page, you can add or remove iteration as need.
+	![iteration-settings](assets/img/iteration-settings.png)
 ## Create an Example User Story
 
 Now that our template is ready, we will explain how we can use it according to the proposed Agile workflow we devised in the previous section.
@@ -454,6 +515,7 @@ Select Task from the dropdown menu to load in the task template.
 ![slash-task](assets/img/slash-task.png)
 
 Update the task body with the following information:
+
 ```
 # Linked User Story (-ies)
 - #1 
@@ -462,7 +524,7 @@ Update the task body with the following information:
 - Add the ability to sign into the web application using valid MacID credentials
 - We will be using the `msal-react` library to enable SSO using MS Azure
 
-# Subtaks
+# Subtasks
 - Register SPA in MS Azure AD
 - Create environment and authentication configuration files
 - Wrap template in `MsalProvider` component
@@ -492,7 +554,7 @@ The task should be moved through the containers according to the following progr
 2. When the developer is done working on a task, they should create a pull request:
 	1. Go to the **Pull Request** tab on their repository, clicking on **New pull request**.
 	2. Select the source branch
-	3. Add `?template=feature_pr_template.md` or `?template=bugfix_pr_template.md` to the URL
+	3. Add `?template=feature_pr_template.md` or `?template=bugfix_pr_template.md` to the URL and hit the **Enter** key to reload the page
 	4. Click **Create pull request**
 	5. Fill out the **Title** and the **Body** of the pull request
 	6. Click **Create Pull Request**
