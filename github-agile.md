@@ -550,8 +550,10 @@ Remember to go back to the user story and update the **Linked Tasks** section as
 Once a developer starts working on a task, they will create a branch with the desired changes.
 
 The task should be moved through the containers according to the following progression track:
-1. When the developer starts working on a task, they should move its card to the **In Progress** container.
+1. When a developer starts working on a task, they should move its card to the **In Progress** container.
+
 	![card-inprogress](assets/img/card-inprogress.png)
+	
 2. When the developer is done working on a task, they should create a pull request:
 	1. Go to the **Pull Request** tab on their repository, clicking on **New pull request**.
 	2. Select the source branch
