@@ -197,6 +197,7 @@ We will now create the templates for feature pull requests and bug fix pull requ
 2. Click the **Add file** button and select **Create new file**
 3. Enter `.github/PULL_REQUEST_TEMPLATE/feature_pr_template.md` in the name field
 4. Add the following content to the file 
+
 ```
 ### Feature Description
 - Describe the new feature here.  
@@ -210,13 +211,14 @@ We will now create the templates for feature pull requests and bug fix pull requ
 
 ### Additional Information
 - Describe the addition changes/steps you took, for example the SQL commands used for adding a column in database table.   
-
 ```
+
 5. Click commit changes to the save the file.
 
 Repeat the process above to create the bug fix pull request template using the following information:
 **File name:** `.github/PULL_REQUEST_TEMPLATE/bugfix_pr_template.md`
 **File content:**
+
 ```
 # Bug Fix Title
 
@@ -238,7 +240,6 @@ Repeat the process above to create the bug fix pull request template using the f
 
 ### Additional Information
 - Describe the addition changes/steps you took, for example the SQL commands used for adding a column in database table.  
-
 ```
 
 When creating a pull request, add the following query parameter to the URL to use one of the templates above:
@@ -450,6 +451,7 @@ Repeat the steps above and create another user story that centers around giving 
 We recommend using the following title: "As an external user, I want to login using my Google account so that I don't have to create a new account".
 
 Add the following description to the body of the user story:
+
 ```
 # User Story
 - This user story targets external customers.
@@ -532,7 +534,6 @@ Update the task body with the following information:
 - Create `PermissionGate` component to check if a user is signed in or not
 - Create the Microsoft Graph client helper
 - Update existing pages to be restricted unless a user is logged in
-
 ```
 
 Notice that we linked a user story by entering a **pound sign** (**#**) and then selecting the user story from the dropdown menu. The user story number may be different for you.
