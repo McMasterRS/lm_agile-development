@@ -562,12 +562,18 @@ The task should be moved through the containers according to the following progr
 	5. Fill out the **Title** and the **Body** of the pull request
 	6. Click **Create Pull Request**
 3. Link the pull request to the task by opening the pull request clicking on **Development** in the side bar and selecting the task.
+
 	![link-task](assets/img/link-task.png)
+	
 4. Add **Reviewers** and **Assignees** to the pull request
 5. Move the task card to the **Awaiting Review** container
+
 	![card-awaiting](assets/img/card-awaiting.png)
+	
 6. When the pull request has been tested and approved, the task card should be moved to the **Done** container and the developer in charge of this task should also close it (i.e., close the issue in GitHub).
+
 	![card-done](assets/img/card-done.png)
+	
 7. Once all the tasks that are part of a user story are done, the user story issue should also be closed.
 
 ## Using the Roadmap View
