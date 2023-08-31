@@ -244,8 +244,8 @@ Repeat the process above to create the bug fix pull request template using the f
 ```
 
 When creating a pull request, add the following query parameter to the URL to use one of the templates above:
-- `template=feature_pr_template.md`
-- `template=bugfix_pr_template.md`
+- `?template=feature_pr_template.md`
+- `?template=bugfix_pr_template.md`
 ## Create a New Project
 
 Now that we created the user story label and template, we can proceed to create a new project in GitHub Projects.

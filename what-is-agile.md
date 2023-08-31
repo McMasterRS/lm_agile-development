@@ -123,9 +123,11 @@ The table above shows a detailed comparison between Agile and Waterfall projects
 
 - **Failed:** A failed project is one that is canceled before it is completed, or completed but not used.
 
-The results in the table above indicate that projects of all sizes benefit from adopting the Agile methodology given that Agile projects of all size have higher success rates and lower challenge and failure compared to Waterfall projects of similar sizes. 
+The results in the table above indicate that projects of all sizes benefit from adopting the Agile methodology given that Agile projects of all sizes have higher success rates and lower challenge and failure rates compared to Waterfall projects of similar sizes. 
 
 ![standish-gifted-vs-unskilled](assets/img/standish-gifted-vs-unskilled.png)
 _Image retrieved from the [2015 Standish Group Chaos Report](https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf)_
 
 The Standish Group Chaos Study also highlights the importance of mastering the principles of Agile. The report found that the success rate of Agile projects increased as the level of competence of the development team in Agile increased. Similarly, teams that are more skilled in Agile are less usually less challenged and face less failure rates during the development process. Consequently, we believe that learning and mastering the Agile development process will greatly benefit software projects of all sizes and pay dividends for the development team in the long run.
+
+The Agile methodology particularly benefits teams working a single project at a time. While working on multiple Agile projects simultaneously is certainly possible, splitting up the team's time and focus on multiple software projects will lead to longer delivery times and software products of compromised quality. In other words, the more projects the team is handling in parallel, the less efficient Agile will be. As such, we recommend serializing projects based on priority and only working on one Agile project at a time to maximize productivity and efficiency. 
