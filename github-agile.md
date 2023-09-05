@@ -487,7 +487,7 @@ Your Product Backlog container will now look like this:
 
 ![product-backlog-filled](assets/img/product-backlog-filled.png)
 
-# Populate Sprint Backlog
+## Populate Sprint Backlog
 
 When you are ready to start development on your project, you will need to select a set of user stories to work on in the first sprint. Starting with high priority (i.e., "Must Have") user stories is often recommended, but you should also consider the dependencies between the different user stories. For example, if completing a user story is a blocker for a set of other user stories, then it may be beneficial to complete that user story first, so that you can address the other dependent user stories in future sprints. If during this assessment process, you encounter issues that you want to freeze, make sure to move them to the Icebox container on the Agile Board.
 
@@ -525,12 +525,12 @@ Select Task from the dropdown menu to load in the task template.
 Update the task body with the following information:
 
 ```
-# Linked User Story (-ies)
-- #1 
-
 # Task Description
 - Add the ability to sign into the web application using valid MacID credentials
 - We will be using the `msal-react` library to enable SSO using MS Azure
+
+# Linked User Story (-ies)
+- #1 
 
 # Subtasks
 - Register SPA in MS Azure AD

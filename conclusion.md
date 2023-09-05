@@ -19,7 +19,7 @@ Throughout this learning module, we learned the basics of the Agile methodology 
 - An Agile Board is a tool that helps developers keep track of their user stories and tasks and often contains several columns or containers including a Product Backlog, Sprint Backlog, an Icebox as well as status containers like Todo, In Progress, Awaiting Review and Done.
 - User stories in Agile can have different priority levels with higher priority user stories taking the precedence in terms of implementation order.
 - Agile projects of all sizes have higher success rates and lower challenge and failure rates compared to Waterfall projects of comparable sizes. 
-- The Agile methodology is best suited for teams working a single project at a time.
+- The Agile methodology is best suited for teams working on a single project at a time.
 
 ## References & Additional Resources
 - [Manifesto for Agile Software Development](https://agilemanifesto.org/)
