@@ -107,13 +107,13 @@ We recommend that you fill out the body of the user story using the following te
 - Acceptance criteria should use the following format: "Given (how things begin), when (action taken), then (outcome of taking action)."	
 ```
 
-We will add the same MacID SSO user story that we used before as an example:
+We will add the same MacID SSO user story that we used before as an example. The title of the user story is: "As an internal user, I want to login using my MacID so that I don't have to create a separate account." and the body should contain the following:
 
 ```
 # User Story
-- This user story targets external customers.
-- External customers want to use their existing Google account credentials to login to the web application.
-- The main benefit of this user story is that external customers will not have to create a new account or need to remember a new pair of credentials to use the web application. This would also lower the barrier to entry of the web application and make the login process more seamless for external users.
+- This user story targets internal customers.
+- Internal customers want to use their existing MacID credentials to login to the web application.
+- The main benefit of this user story is that internal customers will not have to create a new account or need to remember a new pair of credentials to use the web application. This would also lower the barrier to entry of the web application and make the login process more seamless for internal users.
 
 # Linked Tasks
 - TBD
@@ -122,9 +122,9 @@ We will add the same MacID SSO user story that we used before as an example:
 - Normal
 
 # Acceptance Criteria
-- Given that I am an external customer, when I click the "Sign in" button, then I should be given the option login using my Google account.
-- Given that I am an external customer, when I enter my valid Google account and password credentials, then I should be logged into the application and taken to the main landing page.
-- Given that I am an external customer that has already logged in, when I close my browser tab and open the web application in a new tab, then the web application should require me to sign in again.
+- Given that I am an internal customer, when I click the "Sign in" button, then I should be given the option login using my MacID and password.
+- Given that I am an internal customer, when I enter my valid MacID and password credentials, then I should be logged into the application and taken to the main landing page.
+- Given that I am an internal customer that has already logged in, when I close my browser tab and open the web application in a new tab, then the web application should require me to sign in again.
 ```
 
 Make sure to tag the user story with the **User Story** label as well as a priority label. In this example, we used the **Must Have** label since this user story is a security requirement. You may also want to assign the user story to a developer at this point.

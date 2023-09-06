@@ -21,6 +21,14 @@ Throughout this learning module, we learned the basics of the Agile methodology 
 - Agile projects of all sizes have higher success rates and lower challenge and failure rates compared to Waterfall projects of comparable sizes. 
 - The Agile methodology is best suited for teams working on a single project at a time.
 
+We also learned how to implement and use an Agile Board in GitHub Project and Microsoft Planner.
+
+## GitLab
+
+We did not cover creating an Agile Board using the GitLab "Issues Board"  tool because it does not provide enough flexibility to adopt the Agile methodology proposed in this learning module. Containers or lists in the GitLab "Issues Board" must have a set scope i.e., they must share the same label, assignee, milestone or iteration to appear in the same list. This limitation prevents from creating the containers (Product Backlog, Sprint Backlog, Todo, etc.) needed for our recommended Agile Board template and moving issues (user stories/tasks/spikes) through them. Thus, if you are starting a new project and you want to use the Agile methodology covered in this learning module, we recommend opting for GitHub over GitLab since GitHub Projects is much more suited for the creation of an Agile Board.
+
+![gitlab-list](assets/img/gitlab-list.png)
+
 ## References & Additional Resources
 - [Manifesto for Agile Software Development](https://agilemanifesto.org/)
 - [#NoEstimates (Allen Holub) - YouTube](https://www.youtube.com/watch?v=QVBlnCTu9Ms)

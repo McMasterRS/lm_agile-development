@@ -399,7 +399,7 @@ You can create new issues in one of two ways:
 
 We will now create an example user story. For the purposes of this learning module, we will create a user story centered around adding single sign-on using MacID credentials. 
 
-The title of the user story follow the format proposed in the previous section: "# As an internal user, I want to login using my MacID so that I don't have to create a separate account."
+The title of the user story follow the format proposed in the previous section: "As an internal user, I want to login using my MacID so that I don't have to create a separate account."
 
 Next, fill out the body of the user story. The text provided below is an example of the information to include in this section:
 
