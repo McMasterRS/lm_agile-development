@@ -85,7 +85,7 @@ In order to use Agile project management, we recommend using the following workf
 2. Organize your user stories into epics by finding stories that connect to one another and make up a cohesive epic that revolves around a single topic.
 3. Create your Agile Board using a project management tool.
 4. Assess your user stories and identify the ones that have a higher priority and should be tackled in this iteration. If you encounter any user stories that you want to freeze, make sure to move them to the Icebox container.
-5. Split each user story into multiple tasks that include more implementation and technical details. The tasks will then be tackled by the development team. Ensure that each task gradually moves from the containers in the following order: Todo &rarr; In Progress &rarr; Awaiting Review &rarr; Done.
+5. Split each user story into multiple tasks that include more implementation and technical details. The tasks will then be tackled by the development team. Ensure that each task gradually moves through the containers in the following order: Todo &rarr; In Progress &rarr; Awaiting Review &rarr; Done.
 6. At the end of the iteration, the team should reconvene and assess their progress and make modifications as needed based on the customer feedback. Keep an open mind to any changing requirements that may arise.
 7. Once the iteration is complete, the team can move on to next iteration by repeating steps 4-6.
 8. The team should then set sync points or milestones to assess the project's progress and evaluate the strategies used and the mid and long-term project goals.

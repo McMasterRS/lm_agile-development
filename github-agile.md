@@ -246,6 +246,7 @@ Repeat the process above to create the bug fix pull request template using the f
 When creating a pull request, add the following query parameter to the URL to use one of the templates above:
 - `?template=feature_pr_template.md`
 - `?template=bugfix_pr_template.md`
+
 ## Create a New Project
 
 Now that we created the user story label and template, we can proceed to create a new project in GitHub Projects.
@@ -383,6 +384,7 @@ Note that you may need to update the iteration field for future projects that us
 4. In the list on the left, click the name of the iteration field you want to adjust.
 5. From this page, you can add or remove iteration as need.
 	![iteration-settings](assets/img/iteration-settings.png)
+
 ## Create an Example User Story
 
 Now that our template is ready, we will explain how we can use it according to the proposed Agile workflow we devised in the previous section.
