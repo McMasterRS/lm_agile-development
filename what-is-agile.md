@@ -105,7 +105,7 @@ After collecting user stories from the customers or stakeholders, the software d
 
 **Could Have:** This category can be considered a wish-list. "Could Have" user stories should be the first ones to be ignored or rejected in case of limited time or resources
 
-**Won't Have:** This category contains user stories that the team has agreed will not make it into the product. If you think a "Won't Have" user story may be reconsidered in the future, you may place in the Icebox container of your Agile Board.
+**Won't Have:** This category contains user stories that the team has agreed will not make it into the product. If you think a "Won't Have" user story may be reconsidered in the future, you may place it in the Icebox container of your Agile Board.
 
 It is imperative that the team does not spend too much time or effort prioritizing user stories. The only real measure of progress in Agile development is functioning software (even if it is incomplete). Spending too much time on estimates for your user stories will reduce the amount of time and resources spent on developing the software product, and thus move your methodology further away from the real principles of Agile.
 ## How does Agile compare to traditional software development methodologies (Waterfall)?
