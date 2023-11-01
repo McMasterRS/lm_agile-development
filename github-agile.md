@@ -320,6 +320,25 @@ You can click on a container and drag it to rearrange the order of the container
 
 ![final-board](assets/img/final-board.png)
 
+
+## (Optional) Add Completed Container
+
+GitHub Projects provides an "Insights" feature that allows the user to create reports and graphs. The default report that is included  in the "Burn up" report that shows the progress of your project items over time. This chart can be used to view progress, spot trends, and identify bottlenecks to help move the project forward. It might be beneficial to customize this chart to compute the burn rate of your user stories. However, the "Insights" reports do NOT include archived items. As such, if you plan on using this feature, you should not archive completed user stories. Instead, you can create a new Completed (User Stories) container that houses closed user stories. 
+
+To create the Completed container: 
+
+Click the **+** button next to the Icebox container to create a new container. 
+
+Next, click **New Column** an fill the form in the popup window:
+- Label text: Completed (User Stories)
+- Color: Gray
+- Description: Contains user stories that have been completed.
+
+![completed-container](assets/img/completed.png)
+
+Finally, click the **Save** button. 
+
+Following this change, you will be able to move completed and closed user stories at the end of an iteration instead of archiving them.
 ## Add Roadmap
 
 Now that our board is ready, we will create an alternate view in GitHub Projects for our roadmap. 
@@ -607,13 +626,34 @@ An iteration is complete after its assigned duration has elapsed and all the use
 
 ![close-issue](assets/img/close-issue.png)
 
+
+If you do not plan on using the "Insights" feature (and thus did not create a Completed container), you can archive a user story by clicking the **three dots** next to its title and number and selecting **Archive** from the dropdown menu.
+
+![archive-one](assets/img/archive-one.png)
+
+If all the user stories in your Sprint Backlog are completed you can archive all of them by clicking on the **three dots** button in the top-right corner of the Sprint Backlog container and selecting **Archive all**.
+
+![archive-all](assets/img/archive-all.png)
+
+Alternatively, if you have a Completed container, you can move completed user stories to this container by dragging and dropping them or by clicking the **three dots** next to a user story's title and number and selecting **Move to column** from the dropdown menu. Finally, select **Completed (User Stories)** from the list of containers and the user story will be move to that container.
+
+![move-column](assets/img/move-column.png)
+
 At the end of an iteration, the team should meet to assess the work done during the current iteration. Ideally, all user stories in the current Sprint Backlog should be completed at this point. Nevertheless, if the team is left with incomplete user stories in the Sprint Backlog, then can be addressed in the following sprint or moved back to the Product Backlog or Icebox if the user requirements have changed.
 
 The meeting at the end of an iteration is also a great opportunity for the team to assess their progress on a project and identify any weak points and modify their methodology or strategy accordingly. 
 
+## Insights
 
+GitHub Projects provides an "Insights" feature that allows users to generate helpful reports and charts. 
 
+To access the Insights page, click the **Navigate to insights** button in the top-right corner of your project.
 
+![insights-button](assets/img/insights-button.png)
+
+The Insights page includes the Burn up chart by default. By default, this charts includes all items (i.e., user stories, tasks and spikes). If you want to view the burn up chart for user stories, simply add the following query to the **Filter by keyword or by field** box: `is:issue label:"user story"`. The aforementioned query restricts the chart to issues that are marked with the `user story` label.
+
+![burn-up](assets/img/burn-up.png)
 
 
 
