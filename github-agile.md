@@ -338,7 +338,7 @@ Next, click **New Column** an fill the form in the popup window:
 
 Finally, click the **Save** button. 
 
-Following this change, you will be able to move completed and closed user stories at the end of an iteration instead of archiving them.
+Following this change, you will be able to move completed and closed user stories at the end of an iteration instead of archiving them. Note that you can still archive completed tasks or spikes.
 ## Add Roadmap
 
 Now that our board is ready, we will create an alternate view in GitHub Projects for our roadmap. 
