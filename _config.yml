@@ -1,6 +1,6 @@
 title: Introduction to the Agile Methodology # *** Enter learning module title here
 github_repo_url: "https://mcmasterrs.github.io/lm_agile-development/" # ***Enter learning module URL (in github pages) here
-gh_edit_repository: "https://github.com/McMasterRS/lm_agile-development/" #*** ENTER the github URL for your repo
+gh_edit_repository: "https://github.com/McMasterRS/lm_agile-development/" # *** ENTER the github URL for your repo
 
 subtitle: "Research Software Development Learning Module - Introduction to the Agile Methodology "
 favicon_ico: "https://raw.githubusercontent.com/McMasterRS/learning_module-template/main/assets/img/favicon.ico"
