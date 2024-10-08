@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Conclusion
-nav_order: 7
+nav_order: 8
 ---
 
 # Conclusion 
@@ -42,4 +42,4 @@ We did not cover creating an Agile Board using the GitLab "Issues Board"  tool b
 - [The CHAOS Report 2015](https://www.standishgroup.com/sample_research_files/CHAOSReport2015-Final.pdf)
 - [Can Scrum give its real value by running multiple projects in parallel with only one team?](https://mabrouk-thabet.medium.com/can-scrum-give-its-real-value-by-running-multiple-projects-in-parallel-with-only-one-team-f7ccda74e701)
 - [How to manage working on multiple projects simultaneously? – The Agile Director](https://theagiledirector.com/article/2016/02/18/how-to-manage-working-on-multiple-projects-simultaneously/)
-
+- [Agile project management: Sprints in Project for the web](https://techcommunity.microsoft.com/t5/project-blog/agile-project-management-sprints-in-project-for-the-web/ba-p/3649224)
