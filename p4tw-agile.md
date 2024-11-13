@@ -34,6 +34,8 @@ Before we add new tasks item to the agile board, let's first look at some of the
 - **Checklist**: list of spikes that need to be completed as part of the task. 
 - **Dependency**: for tasks that are categorized in the user stories bucket, each contains a list of tasks that need to be completed. 
 
+> Since Project for the Web is not specifically designed for agile project management, using some of the discussed attributes might disrupt other functions. For instance, dependencies in P4tW are intricately linked with the timeline function. This relationship could affect the expected behavior of the timeline if you attempt to use it for project management.  
+
 ### Create Custom Fields (Optional)
 
 Project for the Web provides the capability to add custom attributes to tasks, enabling more tailored and efficient task management. Start by selecting the Grid view. Scroll to the right most of the grid and click "Add column".  
